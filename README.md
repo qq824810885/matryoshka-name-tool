@@ -9,11 +9,11 @@ Apple [does not support](https://developer.apple.com/library/mac/qa/qa1118/_inde
 
 ## Usage
 
-`python matryoshka_name_tool.py ./comskip ./comskip-gui`
+`python mdeploy.py ./application -L /usr/local/ -d lib`
 
-`python matryoshka_name_tool.py -h`
+`python mdeploy.py -h`
 ```
-usage: matryoshka_name_tool.py [-h] [-d INSTALL_LIBDIR] [-L LIBDIR] [-u]
+usage: mdeploy.py [-h] [-d INSTALL_LIBDIR] [-L LIBDIR] [-u]
                                OBJS [OBJS ...]
 
 positional arguments:
@@ -24,7 +24,7 @@ optional arguments:
   -d INSTALL_LIBDIR, --install-libdir INSTALL_LIBDIR
                         Shared library install directory
   -L LIBDIR, --libdir LIBDIR
-                        Shared library source directory
+                        Shared library source directory(共享库的目录前缀)
   -u, --update          Update the install directory
 ```
 
