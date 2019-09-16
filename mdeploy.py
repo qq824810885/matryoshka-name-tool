@@ -52,8 +52,8 @@ class MatryoshkaName:
         parser = ap.ArgumentParser()
         parser.add_argument('objects', metavar='OBJS', type=str, nargs='+',
                             help='Object file[s]')
-        parser.add_argument('-d', '--install-libdir', help="Shared library install directory", type=str, default='../lib/')
-        parser.add_argument('-L', '--libdir', help="Shared library source directory", type=str, default='/opt/local/lib/')
+        parser.add_argument('-d', '--install-libdir', help="Shared library install directory", type=str, default='lib/')
+        parser.add_argument('-L', '--libdir', help="Shared library source directory", type=str, default='/usr/local/')
         parser.add_argument('-u', '--update', help="Update the install directory", action='store_true')
         return parser.parse_args()
 
